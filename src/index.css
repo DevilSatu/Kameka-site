@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-dark: #1e1e24;
+  --color-accent-red: #d90429;
+  --color-text-main: #edf2f4;
+  --color-text-muted: #8d99ae;
+}
+
+@layer utilities {
+  .neu-box {
+    background: #1e1e24;
+    box-shadow: 8px 8px 16px #151519, -8px -8px 16px #27272f;
+  }
+  .neu-box-pressed {
+    background: #1e1e24;
+    box-shadow: inset 8px 8px 16px #151519, inset -8px -8px 16px #27272f;
+  }
+  
+  /* Выпуклая кнопка (Raised) */
+  .neu-btn {
+    background: #1e1e24;
+    box-shadow: 5px 5px 10px #151519, -5px -5px 10px #27272f;
+    transition: all 0.2s ease-in-out;
+  }
+  .neu-btn:hover {
+    box-shadow: 7px 7px 14px #151519, -7px -7px 14px #27272f;
+  }
+  .neu-btn:active {
+    box-shadow: inset 5px 5px 10px #151519, inset -5px -5px 10px #27272f;
+  }
+
+  /* Вдавленная кнопка (Pressed) */
+  .neu-btn-pressed {
+    background: #1e1e24;
+    box-shadow: inset 5px 5px 10px #151519, inset -5px -5px 10px #27272f;
+    transition: all 0.2s ease-in-out;
+  }
+  .neu-btn-pressed:hover {
+    box-shadow: inset 7px 7px 14px #151519, inset -7px -7px 14px #27272f;
+  }
+  .neu-btn-pressed:active {
+    box-shadow: 5px 5px 10px #151519, -5px -5px 10px #27272f;
+  }
+
+  /* Красная кнопка */
+  .neu-btn-red {
+    background: #d90429;
+    box-shadow: 5px 5px 10px #151519, -5px -5px 10px #27272f;
+    transition: all 0.2s ease-in-out;
+    color: white;
+  }
+  .neu-btn-red:hover {
+    background: #ef233c;
+    box-shadow: 7px 7px 14px #151519, -7px -7px 14px #27272f;
+  }
+  .neu-btn-red:active {
+    box-shadow: inset 5px 5px 10px #b80323, inset -5px -5px 10px #fa052f;
+  }
+  
+  /* Поля ввода */
+  .neu-input {
+    background: #1e1e24;
+    box-shadow: inset 5px 5px 10px #151519, inset -5px -5px 10px #27272f;
+    border: none;
+    outline: none;
+  }
+  .neu-input:focus {
+    box-shadow: inset 7px 7px 14px #151519, inset -7px -7px 14px #27272f;
+  }
+}
